@@ -1,0 +1,19 @@
+
+
+// c# 14 and dotnet 10.0
+
+strongly type       tomato not catchup
+weakly type 		tomato or  catchup
+statically type   	statically type 
+Dynamically type	accept all
+
+c# is strongly statically type
+
+
+bcl & aliases
+provides pre-defined types with functionality
+system.int32 represent  32bit signed integer
+aliases like (int) is aliases for system32
+
+
+
