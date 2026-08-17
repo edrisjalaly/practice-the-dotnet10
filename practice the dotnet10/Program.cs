@@ -23,3 +23,26 @@ bool isActive = true;
 char grade = 'A';
 string message = "Hello, World!";
 var name = "i well call you latter";
+
+
+//System.Console class
+// read the user input from the console : return string
+Console.ReadLine();
+
+// print text to the console with new line : return void
+Console.WriteLine();
+
+// print text to the console without new line : return void
+Console.Write(message);
+
+// clear the console : return void
+Console.Clear();
+
+
+
+var userName = Console.ReadLine();
+var password = Console.ReadLine();
+
+Console.WriteLine($"User name: {userName}, Password: {password}");
+
+Console.Clear();
