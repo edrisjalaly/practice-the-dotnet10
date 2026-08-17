@@ -9,16 +9,22 @@ Console.WriteLine("Hello, World!");
 //UserInput.ReadUserAndPassword();
 
 
-
-
 // Expression -> oprand operator operand -> value
-Expression.Expression1();
+ConsoleBasics.Expression1();
 
 // Expression -> operator oprand   or   oprand operator -> value
-Expression.Expression2();
+ConsoleBasics.Expression2();
 
 // Expression -> Expression operator Expression -> value
-Expression.Expression3();
+ConsoleBasics.Expression3();
+
+
+
+// ternary operator : check the first expression if it is true then return the second expression else return the third expression
+// Expression ? Expression : Expression
+ConsoleBasics.TernaryOperatorDemo();
+
+
 
 
 

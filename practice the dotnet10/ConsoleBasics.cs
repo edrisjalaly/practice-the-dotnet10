@@ -30,5 +30,47 @@ namespace Examples
 
             Console.WriteLine(message);
         }
+
+        public static void ReadUserAndPassword()
+        {
+            Console.Write("Enter user name: ");
+            var userName = Console.ReadLine();
+
+            Console.Write("Enter password: ");
+            var password = Console.ReadLine();
+
+            Console.WriteLine($"User name: {userName}, Password: {password}");
+        }
+
+        public static void Expression1()
+        {
+            // Expression -> oprand operator operand -> value
+            int sum = 10 + 20;
+            Console.WriteLine($"Sum: {sum}");
+        }
+        public static void Expression2()
+        {
+            // Expression -> operator oprand   or   oprand operator -> value
+            int a = 10;
+            int b = 20;
+            int c = a + b;
+            Console.WriteLine(c);
+
+            bool isEnabled = true;
+            Console.WriteLine(isEnabled);
+        }
+        public static void Expression3()
+        {
+            // Expression -> Expression operator Expression -> value
+            var result = 10 + 20 * 2;
+            Console.WriteLine($"Result: {result}");
+        }
+
+        public static void TernaryOperatorDemo()
+        {
+            int score = 10;
+            string result = score > 10 ? "Pass" : "Fail";
+            Console.WriteLine(result);
+        }
     }
 }
