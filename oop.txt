@@ -1,0 +1,23 @@
+stand for object-oriented programming
+introduced in 1960s with the language Simula
+later used in Smalltalk, C++, Java, C#, Python, and many other languages
+
+in oop objects are the building blocks of program
+objects are reprent anything from real life or abstract ideas
+
+each object contans data and behavior
+abstraction, encapsulation, inheritance, and polymorphism are the four main principles of oop
+
+car blueprint   
+
+car { 
+	color: red
+	model: 2024
+	speed: 0
+	start() {
+		// code to start the car
+	}
+	stop() {
+		// code to stop the car
+	}
+}
