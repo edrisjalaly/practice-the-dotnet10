@@ -1,4 +1,5 @@
 ﻿using Examples;
+using practice_the_dotnet10;
 using System.Runtime.Intrinsics.Arm;
 
 Console.WriteLine("Hello, World!");
@@ -22,7 +23,7 @@ Console.WriteLine("Hello, World!");
 
 // ternary operator : check the first expression if it is true then return the second expression else return the third expression
 // Expression ? Expression : Expression
-ConsoleBasics.TernaryOperatorDemo();
+//ConsoleBasics.TernaryOperatorDemo();
 
 
 // if statement
@@ -53,11 +54,35 @@ ConsoleBasics.TernaryOperatorDemo();
 // continue statement
 // any loop type can be continued using continue statement
 // any loop (test consition) { if (condition) { continue; } }
-ConsoleBasics.ContinueStatement();
+//ConsoleBasics.ContinueStatement();
+
+/**
+// class declaration
+blueprint :: access modifier (class) ClassName { feilds contructor Properties methods }
+
+access modifier: public, private, protected, internal, protected internal, private protected
+optional: abstract, sealed, static, partial
+class are write as pascal case
+
+// instantiation of class
+SomeClass someObject = new SomeClass(); Or SomeClass someObject = new(); c# 9.0 feature
+
+access with . notation
+SomeClass someObject = new SomeClass();
+someObject.[Feild]
+someObject.[Property]
+someObject.[Method]
 
 
-//
+object initializer syntax
+
+SomeClass someObject = new()
+{
+    [Feild] = value,
+    [Property] = value,
+};
+
+**/
 
 
-
-
+oop.classDeclaration();
