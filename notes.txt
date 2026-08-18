@@ -17,3 +17,21 @@ aliases like (int) is aliases for system32
 
 
 
+control flow statements
+
+1 - selection statements
+used to make decisions 
+
+(if and switch)
+
+2 - iteration statements
+used to repeat actions based on some condition
+
+for
+
+3 - jump statements
+used to move to diffrenr part of the code
+
+
+
+

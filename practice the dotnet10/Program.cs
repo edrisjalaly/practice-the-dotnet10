@@ -29,3 +29,9 @@ Console.WriteLine("Hello, World!");
 
 //switch statement
 ConsoleBasics.SwitchStatement();
+
+
+// for statement 
+// for(initialization; condition; increment/decrement)
+
+ConsoleBasics.ForStatement();
