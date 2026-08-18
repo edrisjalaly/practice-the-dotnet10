@@ -124,6 +124,14 @@ namespace Examples
             }
         }
 
-
+        public static void DoWhileStatement()
+        {
+            var input = Console.ReadLine();
+            do
+            {
+                input = Console.ReadLine();
+                Console.WriteLine("you typed:" + input);
+            } while (input != "quit");
+        }
     }
 }

@@ -27,7 +27,7 @@ used to make decisions
 2 - iteration statements
 used to repeat actions based on some condition
 
-(for, while)
+(for, while, do while)
 
 3 - jump statements
 used to move to diffrenr part of the code

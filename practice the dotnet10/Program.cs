@@ -1,4 +1,5 @@
 ﻿using Examples;
+using System.Runtime.Intrinsics.Arm;
 
 Console.WriteLine("Hello, World!");
 
@@ -37,4 +38,7 @@ Console.WriteLine("Hello, World!");
 
 // while statement
 
-ConsoleBasics.WhileStatement();
+//ConsoleBasics.WhileStatement();
+
+// do while statement
+ConsoleBasics.DoWhileStatement();
