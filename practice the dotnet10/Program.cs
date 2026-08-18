@@ -22,7 +22,7 @@ Console.WriteLine("Hello, World!");
 
 // ternary operator : check the first expression if it is true then return the second expression else return the third expression
 // Expression ? Expression : Expression
-//ConsoleBasics.TernaryOperatorDemo();
+ConsoleBasics.TernaryOperatorDemo();
 
 
 // if statement
@@ -47,6 +47,13 @@ Console.WriteLine("Hello, World!");
 // break statement
 // any loop type can be broken using break statement
 // any loop (test consition) { if (condition) { break; } }
-ConsoleBasics.BreakStatement();
+//ConsoleBasics.BreakStatement();
+
+
+// continue statement
+// any loop type can be continued using continue statement
+// any loop (test consition) { if (condition) { continue; } }
+ConsoleBasics.ContinueStatement();
+
 
 

@@ -146,5 +146,19 @@ namespace Examples
                 Console.WriteLine($"Iteration: {i}");
             }
         }
+
+
+        public static void ContinueStatement()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (i == 5)
+                {
+                    Console.WriteLine("Skipping iteration: " + i);
+                    continue;
+                }
+                Console.WriteLine($"Iteration: {i}");
+            }
+        }
     }
 }
