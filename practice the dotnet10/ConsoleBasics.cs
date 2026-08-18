@@ -72,5 +72,38 @@ namespace Examples
             string result = score > 10 ? "Pass" : "Fail";
             Console.WriteLine(result);
         }
+
+        public static void IfStatement()
+        {
+            int number = 10;
+
+            if (number == 0)
+            {
+                Console.WriteLine("The number is zero.");
+            }
+            else if (number == 11)
+            {
+                Console.WriteLine("select from 1 to 10");
+            }
+            else { Console.WriteLine("Number is not zero or eleven"); }
+        }
+
+        public static void SwitchStatement()
+        {
+            var number = 2;
+
+            switch (number)
+            {
+                case 1:
+                    Console.WriteLine("Number is 1");
+                    break;
+                case 2:
+                    Console.WriteLine("Number is 2");
+                    break;
+                default:
+                    Console.WriteLine("Nothing");
+                    break;
+            }
+        }
     }
 }
