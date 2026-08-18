@@ -28,10 +28,13 @@ Console.WriteLine("Hello, World!");
 //ConsoleBasics.IfStatement();
 
 //switch statement
-ConsoleBasics.SwitchStatement();
+//ConsoleBasics.SwitchStatement();
 
 
 // for statement 
 // for(initialization; condition; increment/decrement)
+//ConsoleBasics.ForStatement();
 
-ConsoleBasics.ForStatement();
+// while statement
+
+ConsoleBasics.WhileStatement();

@@ -113,5 +113,17 @@ namespace Examples
                 Console.WriteLine($"Iteration: {i}");
             }
         }
+
+        public static void WhileStatement()
+        {
+            var input = Console.ReadLine();
+            while (input != "quit")
+            {
+                input = Console.ReadLine();
+                Console.WriteLine("you typed:" + input);
+            }
+        }
+
+
     }
 }
