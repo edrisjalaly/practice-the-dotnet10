@@ -30,8 +30,8 @@ used to repeat actions based on some condition
 (for, while, do while)
 
 3 - jump statements
-used to move to diffrenr part of the code
+used to move to different part of the code
 
-
+(break )
 
 

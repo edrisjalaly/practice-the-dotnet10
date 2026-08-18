@@ -41,4 +41,12 @@ Console.WriteLine("Hello, World!");
 //ConsoleBasics.WhileStatement();
 
 // do while statement
-ConsoleBasics.DoWhileStatement();
+//ConsoleBasics.DoWhileStatement();
+
+
+// break statement
+// any loop type can be broken using break statement
+// any loop (test consition) { if (condition) { break; } }
+ConsoleBasics.BreakStatement();
+
+

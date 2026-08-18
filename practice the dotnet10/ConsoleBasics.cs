@@ -133,5 +133,18 @@ namespace Examples
                 Console.WriteLine("you typed:" + input);
             } while (input != "quit");
         }
+
+        public static void BreakStatement()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (i == 5)
+                {
+                    Console.WriteLine("Breaking the loop at iteration: " + i);
+                    break;
+                }
+                Console.WriteLine($"Iteration: {i}");
+            }
+        }
     }
 }
