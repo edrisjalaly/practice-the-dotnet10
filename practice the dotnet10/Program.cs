@@ -85,4 +85,14 @@ SomeClass someObject = new()
 **/
 
 
-oop.classDeclaration();
+//oop.classDeclaration();
+
+
+// feild : access modifier optiional modifier type feildName;
+//access modifier: public, private, protected, internal, protected internal, private protected
+//optional access modifier: static, readonly, const, required
+//feils are write as camel case e.x someFeild
+// add _ before the private feilds e.x _someFeild
+// 
+
+oop.FeildsDemo();
