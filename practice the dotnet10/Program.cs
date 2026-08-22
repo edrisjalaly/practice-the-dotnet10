@@ -95,4 +95,17 @@ SomeClass someObject = new()
 // add _ before the private feilds e.x _someFeild
 // 
 
-oop.FeildsDemo();
+//oop.FeildsDemo();
+
+
+// properties : access modifier optiional modifier type property Name
+//access modifier: public, private, protected, internal, protected internal
+// optional access modifier: virtual, abstract, override, sealed, static, required, new
+
+// access modifier: get  {return feild}
+// access modifier: set { feild = value; }
+// by default properties are public
+// init only setter : set the objest properties only during the object initialization
+
+
+oop.PerpertiesDemo();
