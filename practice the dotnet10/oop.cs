@@ -163,6 +163,7 @@ namespace practice_the_dotnet10
         }
 
 
+
         public class Employee2(string firstName, string lastName, DateTime hireDate, decimal salary)
         {
             public string FirstName { get; init; } = firstName;
@@ -170,12 +171,61 @@ namespace practice_the_dotnet10
             public DateTime HireDate { get; init; } = hireDate;
             public decimal Salary { get; init; } = salary;
         }
-
         public static void PrimaryConsrcutorDemo()
         {
             Employee2 emp2 = new("jan", "khan", DateTime.Now, 400);
 
             Console.WriteLine($" new emp with primary constructor {emp2.FirstName} - {emp2.LastName} - {emp2.HireDate} - {emp2.Salary}");
+        }
+
+
+
+        class ExpressionBodiedmembers()
+        {
+
+        }
+
+
+
+        class SomeClass
+        {
+            public SomeClass() => SomeProperty = "Default Value";
+            private string _someField = string.Empty;
+
+            public string SomeProperty
+            {
+                get => _someField;
+                set => _someField = value;
+            }
+
+            public string SomeReadOnlyProperty => "Defauly ReadOnly value";
+            public string SomeMethod(string someParman) => $"Properties: {_someField} : {someParman}";
+
+        }
+        public static void ExpressionBodiesMembersDemo()
+        {
+            SomeClass some = new();
+            Console.WriteLine(some.SomeMethod("khan"));
+        }
+
+
+        class Teacher
+        {
+            public Teacher() => Name = "khan";
+
+            public string Name
+            {
+                get;
+                set => field = string.IsNullOrWhiteSpace(value) ? field : value;
+            }
+        }
+
+        public static void FeildBackProprty()
+        {
+            Teacher teacher = new();
+            Console.WriteLine(teacher.Name);
+            teacher.Name = "jano";
+            Console.WriteLine(teacher.Name);
         }
     }
 }

@@ -150,5 +150,19 @@ SomeClass someObject = new()
 
 
 
+// primart contructor
+//oop.PrimaryConsrcutorDemo();
 
-oop.PrimaryConsrcutorDemo();
+
+
+// Expression Bodied memebers
+// class members such as : methods, poperties, constructor
+// using shorter syntax when there is only a single experssion
+//oop.ExpressionBodiesMembersDemo();
+
+
+// Feild back property
+// access modifier optional modifier type property name
+// 
+
+oop.FeildBackProprty();
