@@ -161,5 +161,21 @@ namespace practice_the_dotnet10
             Phone phone4 = new Phone("pro", "silver", 512);            
             Console.WriteLine($"phone4 {phone4.Modal} - {phone4.Color} - {phone4.Capacity}");
         }
+
+
+        public class Employee2(string firstName, string lastName, DateTime hireDate, decimal salary)
+        {
+            public string FirstName { get; init; } = firstName;
+            public string LastName { get; init; } = lastName;
+            public DateTime HireDate { get; init; } = hireDate;
+            public decimal Salary { get; init; } = salary;
+        }
+
+        public static void PrimaryConsrcutorDemo()
+        {
+            Employee2 emp2 = new("jan", "khan", DateTime.Now, 400);
+
+            Console.WriteLine($" new emp with primary constructor {emp2.FirstName} - {emp2.LastName} - {emp2.HireDate} - {emp2.Salary}");
+        }
     }
 }

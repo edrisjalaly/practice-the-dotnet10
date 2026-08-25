@@ -146,5 +146,9 @@ SomeClass someObject = new()
 
 
 // Constructor chaining 
+//oop.ConstructorChainingDemo();
 
-oop.ConstructorChainingDemo();
+
+
+
+oop.PrimaryConsrcutorDemo();
