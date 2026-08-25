@@ -117,5 +117,49 @@ namespace practice_the_dotnet10
             Console.WriteLine($"robot1 : {robot1.Name} - {robot1.Description}");
             Console.WriteLine($"robot2 : {robot2.Name} - {robot2.Description}");
         }
+
+
+
+
+        class Phone
+        {
+            public string Modal {  get; init; }
+            public string Color { get; init; }
+            public int Capacity { get; set; }
+
+
+            public Phone() : this ("standard")
+            {
+            }
+
+            public Phone(string modal) : this(modal, "red")
+            {
+            }
+
+            public Phone(string modal, string color) : this (modal, color, 64)
+            {
+            }
+
+            public Phone(string modal, string color, int capacity)
+            {
+                Modal = modal;
+                Color = color;
+                Capacity = capacity;
+            }
+        }
+        public static void ConstructorChainingDemo()
+        {
+            Phone phone = new Phone();            
+            Console.WriteLine($"phone1 {phone.Modal} - {phone.Color} - {phone.Capacity}");
+
+            Phone phon2 = new Phone("pro");            
+            Console.WriteLine($"phone2 {phon2.Modal} - {phon2.Color} - {phon2.Capacity}");
+
+            Phone phone3 = new Phone("pro", "silver");            
+            Console.WriteLine($"phone3 {phone3.Modal} - {phone3.Color} - {phone3.Capacity}");
+
+            Phone phone4 = new Phone("pro", "silver", 512);            
+            Console.WriteLine($"phone4 {phone4.Modal} - {phone4.Color} - {phone4.Capacity}");
+        }
     }
 }

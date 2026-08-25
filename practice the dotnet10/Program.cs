@@ -140,4 +140,11 @@ SomeClass someObject = new()
 // 3 : can overload contrcutor cant overload initializer
 // 4 : can incluse extra logic within contructor
 
-oop.ConstrucorDemo();
+//oop.ConstrucorDemo();
+
+
+
+
+// Constructor chaining 
+
+oop.ConstructorChainingDemo();
