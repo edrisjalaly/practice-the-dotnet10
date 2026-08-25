@@ -108,4 +108,36 @@ SomeClass someObject = new()
 // init only setter : set the objest properties only during the object initialization
 
 
-oop.PerpertiesDemo();
+//oop.PerpertiesDemo();
+
+// methods : parameterized method declaration
+// access modifier optional modifier returnType methodName (type parameterName, type parameterName, ...) { method body } : return [value of returnType]
+// access modifier: public, private, protected, internal, protected internal
+
+
+// parameterless method declaration
+// access modifier optional modifier returnType methodName () { method body } : return [value of returnType]
+// access modifier: public, private, protected, internal, protected internal
+
+// void method declaration
+// access modifier optional modifier void methodName () { method body }
+// iass (infrastructure as a service)
+// paas (platform as a service)
+// saas (software as a service)
+// 
+
+
+//oop.MethodsDemo("my config");
+
+// constructor : access modifier optional modifier ClassName (constructor Name) { constructor body }
+// constructor overloading : multiple constructors with different parameters
+// constructor1() constructor2(type parameterName) constructor3(type parameterName, type parameterName) { constructor body }
+// constructor overloading :: 1:(number of paramethers) 2:(type of paramethers) 3:(order of parmethers)
+
+// diffrenet of constructor vs object initializer 
+// 1 : contructor call first and initializer after that
+// 2 : intializer not enforce the setting values by default
+// 3 : can overload contrcutor cant overload initializer
+// 4 : can incluse extra logic within contructor
+
+oop.ConstrucorDemo();

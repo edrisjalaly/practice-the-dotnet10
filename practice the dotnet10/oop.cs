@@ -59,5 +59,63 @@ namespace practice_the_dotnet10
 
 
 
+        class CloudProvider()
+        {
+            public void Saas(string config)
+            {
+                Console.WriteLine($"SaaS (Software as a Service) provides software applications over the internet {config}");
+                Paas(config);
+            }
+            public void Paas(string config)
+            {
+                Console.WriteLine($"PaaS (Platform as a Service) provides a platform for developers to build, deploy {config}");
+                IaaS(config);
+            }
+            public void IaaS(string config)
+            {
+                Console.WriteLine($"IaaS (Infrastructure as a Service) provides virtualized computing resources over the internet {config}");
+                ProvideHardware();
+            }
+            public void ProvideHardware()
+            {
+                Console.WriteLine("IaaS providers offer virtualized hardware resources such as virtual machines, storage, and networking components");
+            }
+        }
+
+        public static void MethodsDemo(string config)
+        {
+            CloudProvider cloudProvider = new();
+            cloudProvider.Saas(config);
+        }
+
+
+
+        
+        class Robot
+        {
+            public string Name { get; set; }
+            public string Description { get; set; }
+
+            public Robot()
+            {
+                Description = "first object";
+                Name = string.Empty;
+            }
+
+            public Robot(string name, string description)
+            {
+                Name = name;
+                Description = description;
+            }
+        }
+        public static void ConstrucorDemo()
+        {
+            Robot robot1 = new Robot();
+            Robot robot2 = new Robot("khan", "jan");
+
+
+            Console.WriteLine($"robot1 : {robot1.Name} - {robot1.Description}");
+            Console.WriteLine($"robot2 : {robot2.Name} - {robot2.Description}");
+        }
     }
 }
