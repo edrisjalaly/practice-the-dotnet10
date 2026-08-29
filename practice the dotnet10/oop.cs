@@ -209,6 +209,8 @@ namespace practice_the_dotnet10
         }
 
 
+
+
         class Teacher
         {
             public Teacher() => Name = "khan";
@@ -219,7 +221,6 @@ namespace practice_the_dotnet10
                 set => field = string.IsNullOrWhiteSpace(value) ? field : value;
             }
         }
-
         public static void FeildBackProprty()
         {
             Teacher teacher = new();
@@ -227,5 +228,29 @@ namespace practice_the_dotnet10
             teacher.Name = "jano";
             Console.WriteLine(teacher.Name);
         }
+
+
+
+        class Product()
+        {
+            public required string title {  get; set; }
+            public required int price { get; set; }
+
+            public string category { get; set; } = "Default";
+        }
+
+        public static void RequiredDemo()
+        {
+            Product product = new()
+            {
+                title = "book",
+                price = 100,
+                category = "new"
+            };
+
+
+            Console.WriteLine($"this is the object {product.title} : {product.price} : {product.category}");
+        }
+
     }
 }
