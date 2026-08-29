@@ -238,7 +238,6 @@ namespace practice_the_dotnet10
 
             public string category { get; set; } = "Default";
         }
-
         public static void RequiredDemo()
         {
             Product product = new()
@@ -248,9 +247,28 @@ namespace practice_the_dotnet10
                 category = "new"
             };
 
-
             Console.WriteLine($"this is the object {product.title} : {product.price} : {product.category}");
         }
+
+
+
+        static class ConsoleLogger
+        {
+            public static void LogInfo(string message) => Console.WriteLine($"[info] {message}");
+            public static void LogWarning(string message) => Console.WriteLine($"[warning] {message}");
+            public static void LogError(string message) => Console.WriteLine($"[Error] {message}");
+        }
+        public static void SaticModifierDemo()
+        {
+            ConsoleLogger.LogInfo("logger");
+            ConsoleLogger.LogWarning("logger");
+            ConsoleLogger.LogError("logger");
+        }
+
+
+
+
+
 
     }
 }

@@ -165,6 +165,9 @@ SomeClass someObject = new()
 // access modifier optional modifier type property name
 //oop.FeildBackProprty();
 
-oop.RequiredDemo();
 
-//
+//oop.RequiredDemo();
+
+
+
+oop.SaticModifierDemo();
