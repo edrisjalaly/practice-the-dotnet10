@@ -268,6 +268,41 @@ namespace practice_the_dotnet10
 
 
 
+        class Context
+        {
+            public const string constant = "constant value";
+            public static readonly Guid SomeUniquId = Guid.NewGuid();
+
+            private readonly Worker _worker;
+
+            public Context(Worker worker) => _worker = worker;
+
+            public void SartWork() => _worker.DoWork();
+
+
+            public void PrintLocalConstant()
+            {
+                const string localValue = "123";
+                Console.WriteLine($"this is the local values {localValue}");
+            }
+        }
+        class Worker
+        {
+            public void DoWork() => Console.WriteLine("work done");
+        }
+        public static void ReadonlVsConstDemo()
+        {
+            Worker worker = new();
+            Context context = new Context(worker);
+
+            context.SartWork();
+            context.PrintLocalConstant();
+            Console.WriteLine($" const feild value: {Context.constant}");
+            Console.WriteLine($" static readonly feild value: {Context.SomeUniquId}");
+        }
+
+
+
 
 
     }

@@ -170,4 +170,18 @@ SomeClass someObject = new()
 
 
 
-oop.SaticModifierDemo();
+//oop.SaticModifierDemo();
+
+
+
+// readonly us const modfiers overview
+// readonly                                                 const modifier
+// feild belongs to the object                              feild belongs to the class
+// run-time constant assign on declaration on contructor    compilte-time constant assign on declaration
+// can only by declared within a class                      can by declared within a class or method
+// any data type                                            only primitive or string
+// memory allocated at runtime                              no memory allocated at runtime value is embedded within IL code
+// optionally static                                        always static
+
+
+oop.ReadonlVsConstDemo();
