@@ -303,7 +303,55 @@ namespace practice_the_dotnet10
 
 
 
+        class SchoolMember
+        {
+            public string Name { get; set; }
+            public string LastName { get; set; }
+
+            protected SchoolMember(string name, string lastname)
+            {
+                Name = name;
+                LastName = lastname;
+            }
+
+            public void Setinfo(string name, string lastname)
+            {
+                Name = name;
+                LastName = lastname;
+            }
+        }
+
+        class Student(string name, string lastname, decimal gpa) : SchoolMember(name, lastname) 
+        {
+            public decimal GPA { get; private set; } = gpa;
+            public void SetGPA(decimal gpa) => GPA = gpa;
+        }
+
+        class newTeacher(string name, string lastname, string department) : SchoolMember(name, lastname)
+        {
+            public string Department { get; set; } = department;
+
+            public void SetDepartment(string department) => Department = department;
+        }
+
+        public static void BaseAndDriveDemo()
+        {
+            Student student = new("khan", "jan", 3.5m);
+            newTeacher teacher = new("kareem", "kaku", "it");
+
+            Console.WriteLine($"student object {student.Name} - {student.LastName} - {student.GPA}");
+            student.Setinfo("khan2", "jan2");
+            Console.WriteLine($"student object {student.Name} - {student.LastName} - {student.GPA}");
+            student.SetGPA(4);
+            Console.WriteLine($"student object {student.Name} - {student.LastName} - {student.GPA}");
 
 
+
+            Console.WriteLine($"teacher object {teacher.Name} - {teacher.LastName} - {teacher.Department}");
+            teacher.Setinfo("kareem2", "kaku2");
+            Console.WriteLine($"teacher object {teacher.Name} - {teacher.LastName} - {teacher.Department}");
+            teacher.SetDepartment("dari");
+            Console.WriteLine($"teacher object {teacher.Name} - {teacher.LastName} - {teacher.Department}");
+        }
     }
 }

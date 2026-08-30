@@ -184,4 +184,32 @@ SomeClass someObject = new()
 // optionally static                                        always static
 
 
-oop.ReadonlVsConstDemo();
+
+
+//oop.ReadonlVsConstDemo();
+
+
+
+// abstraction : focusing on what it does not how it does it
+// Encapsulation : hiding data and behavier, allowing access only through selected public methods
+// inheritance : reusing shared data and behavior by creating new class based on existing ones
+// (base class, parent class, super class) (child, derive, inherit, extend)
+
+// polymorphism : the process of overriding the parent class method in an object
+
+
+//  access modifiers overview
+//  type (class, interface, struct, Enums)    { public, internal, file}
+//  type memebers (feild, Properties, methods)  {public, protected internal, protected, internal, private protected, private}
+
+
+// public project1  => project2  can access from 1 pro to another
+// internal project1  => project2 cant acceess another projects internal class
+// file project1  => project2 can access the file class in another project or self project another class
+
+
+// protected : project1  a class => b class  can access the protected properties in inherited class or sub inherited class
+// private : project1  a class => b class  cant access the private properties in another class only can use in self class
+
+
+oop.BaseAndDriveDemo();
