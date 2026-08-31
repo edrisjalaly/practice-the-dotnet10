@@ -218,4 +218,14 @@ SomeClass someObject = new()
 
 // upcating : derive class converted to base class
 // downcating : base class converted to derive class
-oop.upAndDownCasting();
+//oop.upAndDownCasting();
+
+
+
+// virtual modifier : allows methods properties and other class memebers to have
+// default behavier while providing the option for what behavier to be override
+oop.virtualModifierDemo();
+
+
+
+//

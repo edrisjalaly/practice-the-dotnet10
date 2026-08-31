@@ -334,6 +334,7 @@ namespace practice_the_dotnet10
             public void SetDepartment(string department) => Department = department;
         }
 
+
         public static void BaseAndDriveDemo()
         {
             Student student = new("khan", "jan", 3.5m);
@@ -353,7 +354,6 @@ namespace practice_the_dotnet10
             teacher.SetDepartment("dari");
             Console.WriteLine($"teacher object {teacher.Name} - {teacher.LastName} - {teacher.Department}");
         }
-
         public static void upAndDownCasting()
         {
 
@@ -369,6 +369,44 @@ namespace practice_the_dotnet10
             newTeacher teacher = (newTeacher)schoolMember2;
             Console.WriteLine($"member1 {student.GPA}");
             Console.WriteLine($"member1 {teacher.Department}");
+        }
+
+
+
+
+            
+        class StandardStudent
+        {
+            private string _name;
+            private string _lastname;
+
+            public StandardStudent(string name, string lastname)
+            {
+                _name = name;
+                _lastname = lastname;
+            }
+
+            public virtual string GetInfo() => $"{_name} : {_lastname}";
+        }
+        class CollegeStudnet(string name, string lastname, decimal gpa) : StandardStudent(name, lastname)
+        {
+            private decimal _gpa = gpa;
+            public override string GetInfo() => $" college {base.GetInfo()} : {_gpa} ";
+        }
+        class SchoolStudent(string name, string lastname, string mark) : StandardStudent(name, lastname)
+        {
+            private string _mark = mark;
+            public override string GetInfo() => $" school {base.GetInfo()} : {_mark}";           
+        }     
+        public static void virtualModifierDemo()
+        {
+            StandardStudent collegeStudnet = new CollegeStudnet("khan", "jan", 4);
+            StandardStudent schoolStudent = new SchoolStudent("sameer", "shahin", "A");
+
+            void DisplayStudentInfo(StandardStudent student) => Console.WriteLine(student.GetInfo());
+
+            DisplayStudentInfo(collegeStudnet);
+            DisplayStudentInfo(schoolStudent);           
         }
     }
 }
