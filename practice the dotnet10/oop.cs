@@ -6,7 +6,7 @@ namespace practice_the_dotnet10
 {
     public static class oop
     {
-        public class Employee{}
+        public class Employee { }
         public static void classDeclaration()
         {
             Employee employee = new Employee();
@@ -90,7 +90,7 @@ namespace practice_the_dotnet10
 
 
 
-        
+
         class Robot
         {
             public string Name { get; set; }
@@ -123,12 +123,12 @@ namespace practice_the_dotnet10
 
         class Phone
         {
-            public string Modal {  get; init; }
+            public string Modal { get; init; }
             public string Color { get; init; }
             public int Capacity { get; set; }
 
 
-            public Phone() : this ("standard")
+            public Phone() : this("standard")
             {
             }
 
@@ -136,7 +136,7 @@ namespace practice_the_dotnet10
             {
             }
 
-            public Phone(string modal, string color) : this (modal, color, 64)
+            public Phone(string modal, string color) : this(modal, color, 64)
             {
             }
 
@@ -149,16 +149,16 @@ namespace practice_the_dotnet10
         }
         public static void ConstructorChainingDemo()
         {
-            Phone phone = new Phone();            
+            Phone phone = new Phone();
             Console.WriteLine($"phone1 {phone.Modal} - {phone.Color} - {phone.Capacity}");
 
-            Phone phon2 = new Phone("pro");            
+            Phone phon2 = new Phone("pro");
             Console.WriteLine($"phone2 {phon2.Modal} - {phon2.Color} - {phon2.Capacity}");
 
-            Phone phone3 = new Phone("pro", "silver");            
+            Phone phone3 = new Phone("pro", "silver");
             Console.WriteLine($"phone3 {phone3.Modal} - {phone3.Color} - {phone3.Capacity}");
 
-            Phone phone4 = new Phone("pro", "silver", 512);            
+            Phone phone4 = new Phone("pro", "silver", 512);
             Console.WriteLine($"phone4 {phone4.Modal} - {phone4.Color} - {phone4.Capacity}");
         }
 
@@ -233,7 +233,7 @@ namespace practice_the_dotnet10
 
         class Product()
         {
-            public required string title {  get; set; }
+            public required string title { get; set; }
             public required int price { get; set; }
 
             public string category { get; set; } = "Default";
@@ -321,7 +321,7 @@ namespace practice_the_dotnet10
             }
         }
 
-        class Student(string name, string lastname, decimal gpa) : SchoolMember(name, lastname) 
+        class Student(string name, string lastname, decimal gpa) : SchoolMember(name, lastname)
         {
             public decimal GPA { get; private set; } = gpa;
             public void SetGPA(decimal gpa) => GPA = gpa;
@@ -352,6 +352,23 @@ namespace practice_the_dotnet10
             Console.WriteLine($"teacher object {teacher.Name} - {teacher.LastName} - {teacher.Department}");
             teacher.SetDepartment("dari");
             Console.WriteLine($"teacher object {teacher.Name} - {teacher.LastName} - {teacher.Department}");
+        }
+
+        public static void upAndDownCasting()
+        {
+
+            // upcating
+            SchoolMember schoolMember1 = new Student("khan", "jan", 50);
+            SchoolMember schoolMember2 = new newTeacher("jan", "man", "it");
+            //Console.WriteLine($"member1 {schoolMember1.gpa}");
+            //Console.WriteLine($"member1 {schoolMember2.department}");
+
+
+            //down-casting
+            Student student = (Student)schoolMember1;
+            newTeacher teacher = (newTeacher)schoolMember2;
+            Console.WriteLine($"member1 {student.GPA}");
+            Console.WriteLine($"member1 {teacher.Department}");
         }
     }
 }

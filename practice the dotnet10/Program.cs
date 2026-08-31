@@ -212,4 +212,10 @@ SomeClass someObject = new()
 // private : project1  a class => b class  cant access the private properties in another class only can use in self class
 
 
-oop.BaseAndDriveDemo();
+//oop.BaseAndDriveDemo();
+
+
+
+// upcating : derive class converted to base class
+// downcating : base class converted to derive class
+oop.upAndDownCasting();
