@@ -438,7 +438,6 @@ namespace practice_the_dotnet10
 
             private void dance() => Console.WriteLine("dancing");
         }
-
         public static void abstractModifier()
         {
             Member member1 = new Club();
@@ -452,6 +451,50 @@ namespace practice_the_dotnet10
 
             display(member1);
             display(member2);
+        }
+
+
+
+
+
+        class infostudent(string name, string lasname)
+        {
+            public string name { get; set; } = name;
+            public string lastname { get; set; } = lasname;
+        }
+        class CourseRepo
+        {
+            public int FindCourse(string inToken) => inToken.Equals("ABC134") ? 1 : 0;
+            public int FindCourse(string inToken, int teacher_id) => inToken.Equals("ABC134") && teacher_id == 10 ? 1 : 0;
+        }
+
+        class Registration(CourseRepo repo)
+        {
+            private readonly CourseRepo _courseRepo = repo;
+
+            public string Register(infostudent student, string inToken)
+            {
+                var courseid = _courseRepo.FindCourse(inToken);
+                return courseid.ToString();
+            }
+            public string Register(infostudent student, string inToken, int teacher_id)
+            {
+                var courseId = _courseRepo.FindCourse(inToken, teacher_id);
+                return courseId.ToString();
+            }
+        }
+        public static void methodOverloading()
+        {
+            CourseRepo repo = new CourseRepo();
+            Registration registration = new Registration(repo);
+
+            infostudent student = new("john", "khan");
+
+            var one = registration.Register(student,"ABC134");
+            var two = registration.Register(student,"ABC134", 10);
+
+            Console.WriteLine($" first {one}");
+            Console.WriteLine($" two {two}");
         }
     }
 }

@@ -241,4 +241,11 @@ SomeClass someObject = new()
 // allows for default implementation            does not allow for default implementation
 // overriding is optional                       overriding is required in all derived non-abstract classes
 // can used with absract and none               can only be used within abstract classes
-oop.abstractModifier();
+//oop.abstractModifier();
+
+
+
+// method overloadin : defining of multiple methods with the same name but different parameters
+// 
+
+oop.methodOverloading();
