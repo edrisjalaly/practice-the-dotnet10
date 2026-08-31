@@ -224,8 +224,21 @@ SomeClass someObject = new()
 
 // virtual modifier : allows methods properties and other class memebers to have
 // default behavier while providing the option for what behavier to be override
-oop.virtualModifierDemo();
+//oop.virtualModifierDemo();
 
 
 
-//
+
+// abstract modifier
+// prevents the class from being instantiated and maked it's members
+// act ad placeholder that must be implemented by any non-abstract derived class
+
+
+
+
+// virtual modifier                             abstract modifier
+// uesd for method,properties, other members    used for method,properties, other members
+// allows for default implementation            does not allow for default implementation
+// overriding is optional                       overriding is required in all derived non-abstract classes
+// can used with absract and none               can only be used within abstract classes
+oop.abstractModifier();

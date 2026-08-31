@@ -408,5 +408,50 @@ namespace practice_the_dotnet10
             DisplayStudentInfo(collegeStudnet);
             DisplayStudentInfo(schoolStudent);           
         }
+
+
+
+
+        abstract class Member
+        {
+            public abstract void participate();
+        }
+        class Club : Member
+        {
+            public override void participate()
+            {
+                TakeSet();
+                Completeform();
+            }
+
+            private void TakeSet() => Console.WriteLine("set taked");
+            private void Completeform() => Console.WriteLine("form completed");
+        }
+        class Bar : Member
+        {
+            public override void participate()
+            {
+                TakeGlass();
+                dance();
+            }
+            private void TakeGlass() => Console.WriteLine("glass taked");
+
+            private void dance() => Console.WriteLine("dancing");
+        }
+
+        public static void abstractModifier()
+        {
+            Member member1 = new Club();
+            Member member2 = new Bar();
+
+            void display(Member member)
+            {
+                Console.WriteLine(member.ToString());
+                member.participate();
+            }
+
+            display(member1);
+            display(member2);
+        }
     }
 }
