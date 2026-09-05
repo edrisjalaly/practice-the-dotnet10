@@ -456,7 +456,6 @@ namespace practice_the_dotnet10
 
 
 
-
         class infostudent(string name, string lasname)
         {
             public string name { get; set; } = name;
@@ -467,7 +466,6 @@ namespace practice_the_dotnet10
             public int FindCourse(string inToken) => inToken.Equals("ABC134") ? 1 : 0;
             public int FindCourse(string inToken, int teacher_id) => inToken.Equals("ABC134") && teacher_id == 10 ? 1 : 0;
         }
-
         class Registration(CourseRepo repo)
         {
             private readonly CourseRepo _courseRepo = repo;
@@ -496,5 +494,40 @@ namespace practice_the_dotnet10
             Console.WriteLine($" first {one}");
             Console.WriteLine($" two {two}");
         }
+
+
+
+
+        public interface IPrintable
+        {
+            void Print();
+        }
+        class Document : IPrintable
+        {
+            public void Print()
+            {
+                Console.WriteLine("Printing document...");
+            }
+        }
+        class Image : IPrintable
+        {
+            public void Print()
+            {
+                Console.WriteLine("Printing image...");
+            }
+        }
+        public static void interfaceDemo()
+        {
+            IPrintable document = new Document();
+            document.Print();
+
+            IPrintable image = new Image();
+            image.Print();
+        }
+
+
+
+
+
     }
 }

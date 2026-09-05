@@ -248,4 +248,10 @@ SomeClass someObject = new()
 // method overloadin : defining of multiple methods with the same name but different parameters
 // 
 
-oop.methodOverloading();
+//oop.methodOverloading();
+
+
+
+// interface : a contract that defines a set of methods and properties that a class must implement
+// access modifier interface interfacename { access modifier properties, access modifier methods }
+oop.interfaceDemo();
