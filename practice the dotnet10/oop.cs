@@ -576,8 +576,6 @@ namespace practice_the_dotnet10
                 Console.WriteLine("Starting the main class...");
             }
         }
-
-
         class sub : main
         {
             public override sealed void Start()
@@ -585,7 +583,6 @@ namespace practice_the_dotnet10
                 Console.WriteLine("Starting the sub class...");
             }
         }
-
         class subsub : sub
         {
             // This will cause a compile-time error because Start is sealed in the base class
@@ -594,8 +591,6 @@ namespace practice_the_dotnet10
             //     Console.WriteLine("Starting the subsub class...");
             //}
         }
-
-
         public static void sealedModifierDemo()
         {
             main mainObj = new main();
@@ -605,5 +600,11 @@ namespace practice_the_dotnet10
             //subsub subsubObj = new subsub();
             //subsubObj.Start(); // This line would cause a compile-time error if uncommented
         }
+
+
+
+
+
+
     }
 }

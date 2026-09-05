@@ -270,7 +270,15 @@ SomeClass someObject = new()
 // 
 
 
-oop.sealedModifierDemo();
+//oop.sealedModifierDemo();
 
+// struct : a value type that can contain data and methods
+// structs is short for structure
+// someStrature someObject = new someStrature();
+// someObject.[Feild]
+// someObject.[Property]
+// someObject.[Method]
 
-
+// someObject = new someStrature() { [Feild] = value, [Property] = value, };
+// 
+other.structsDemo();
