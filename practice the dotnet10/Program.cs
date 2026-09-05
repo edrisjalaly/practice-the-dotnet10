@@ -254,4 +254,11 @@ SomeClass someObject = new()
 
 // interface : a contract that defines a set of methods and properties that a class must implement
 // access modifier interface interfacename { access modifier properties, access modifier methods }
-oop.interfaceDemo();
+//oop.interfaceDemo();
+
+
+
+// os operator : a special method that defines the behavior of an operator when applied to a specific type
+// expression is SomeType variabnleName
+// 
+oop.isOperatorDemo();

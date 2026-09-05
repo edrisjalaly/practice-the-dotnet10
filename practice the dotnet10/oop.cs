@@ -528,6 +528,46 @@ namespace practice_the_dotnet10
 
 
 
+        class studentDemo : schoolMember
+        {
+            
+        }
+        class teacherDemo : schoolMember
+        {
+
+        }
+        abstract class schoolMember
+        {
+
+        }
+        public static void isOperatorDemo()
+        {
+            void DisplayMemberInfo(schoolMember member)
+            {
+                if (member is studentDemo student)
+                {
+                    Console.WriteLine($"This is a student: {student}");
+                }
+                else if (member is teacherDemo teacher)
+                {
+                    Console.WriteLine($"This is a teacher: {teacher}");
+                }
+                else
+                {
+                    Console.WriteLine("Unknown school member.");
+                }
+            }
+
+            studentDemo student = new studentDemo();
+            DisplayMemberInfo(student);
+
+            teacherDemo teacher = new teacherDemo();
+            DisplayMemberInfo(teacher);
+
+        }
+
+
+
 
     }
 }
