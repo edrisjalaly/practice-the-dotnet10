@@ -569,5 +569,41 @@ namespace practice_the_dotnet10
 
 
 
+        class main
+        {
+            public virtual void Start()
+            {
+                Console.WriteLine("Starting the main class...");
+            }
+        }
+
+
+        class sub : main
+        {
+            public override sealed void Start()
+            {
+                Console.WriteLine("Starting the sub class...");
+            }
+        }
+
+        class subsub : sub
+        {
+            // This will cause a compile-time error because Start is sealed in the base class
+            //public override void Start()
+            //{
+            //     Console.WriteLine("Starting the subsub class...");
+            //}
+        }
+
+
+        public static void sealedModifierDemo()
+        {
+            main mainObj = new main();
+            mainObj.Start();
+            sub subObj = new sub();
+            subObj.Start();
+            //subsub subsubObj = new subsub();
+            //subsubObj.Start(); // This line would cause a compile-time error if uncommented
+        }
     }
 }

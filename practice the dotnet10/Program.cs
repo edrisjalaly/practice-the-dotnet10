@@ -261,4 +261,16 @@ SomeClass someObject = new()
 // os operator : a special method that defines the behavior of an operator when applied to a specific type
 // expression is SomeType variabnleName
 // 
-oop.isOperatorDemo();
+//oop.isOperatorDemo();
+
+
+
+
+// sealed modifier : prevents a class from being inherited and a method from being overridden
+// 
+
+
+oop.sealedModifierDemo();
+
+
+
