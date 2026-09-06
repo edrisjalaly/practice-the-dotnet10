@@ -299,4 +299,7 @@ SomeClass someObject = new()
 
 
 // auto default constructor : 
-other.autoDefaultStructDemo();
+//other.autoDefaultStructDemo();
+
+
+other.primaryConstructorDemo();

@@ -102,11 +102,28 @@ namespace practice_the_dotnet10
                 y = 5;
             }
         }
-
         public static void autoDefaultStructDemo()
         {
             AutoDefault autoDefault = new();
             Console.WriteLine($" this is the points {autoDefault.x} - {autoDefault.y} - {autoDefault.z} ");
         }
+
+
+
+        struct PrimaryContructor(int x, int y)
+        {
+            public int x { get; set; } = x;
+            public int y { get; set; } = y;
+        }
+        public static void primaryConstructorDemo()
+        {
+            PrimaryContructor primaryContructor = new(50, 20);
+            Console.WriteLine($" this is the points {primaryContructor.x} - {primaryContructor.y} ");
+        }
+
+
+
+
+
     }
 }
