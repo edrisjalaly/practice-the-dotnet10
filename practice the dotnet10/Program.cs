@@ -294,4 +294,9 @@ SomeClass someObject = new()
 
 //
 
-other.ExplicitParameterlessConstructorDemo();
+//other.ExplicitParameterlessConstructorDemo();
+
+
+
+// auto default constructor : 
+other.autoDefaultStructDemo();

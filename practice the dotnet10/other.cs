@@ -80,12 +80,33 @@ namespace practice_the_dotnet10
                 y = 10;
             }
         }
-
         public static void ExplicitParameterlessConstructorDemo()
         {
             conrnerPoint conrnerPoint = new conrnerPoint();
 
             Console.WriteLine($"this is the points {conrnerPoint.x}, {conrnerPoint.y}");
+        }
+
+
+
+
+        struct AutoDefault
+        {
+            public int x { get; set; }
+            public int y { get; set; }
+            public int z { get; set; }
+
+            public AutoDefault()
+            {
+                x = 10;
+                y = 5;
+            }
+        }
+
+        public static void autoDefaultStructDemo()
+        {
+            AutoDefault autoDefault = new();
+            Console.WriteLine($" this is the points {autoDefault.x} - {autoDefault.y} - {autoDefault.z} ");
         }
     }
 }
