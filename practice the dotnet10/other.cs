@@ -31,7 +31,39 @@ namespace practice_the_dotnet10
 
 
 
+        readonly struct ReadOnlyPoint
+        {
+            public int x { get; }
+            public int y { get;}
+            public ReadOnlyPoint(int x, int y)
+            {
+                this.x = x;
+                this.y = y;
+            }
+            public string Info()
+            {
+                return $"ReadOnlyPoint({x}, {y})";
+            }
+        }
+        public static void readonlystructsDemo()
+        {
+            ReadOnlyPoint p = new ReadOnlyPoint(10, 5);
+            //p.y = 10;
+            //p.x = 10;
+
+            Console.WriteLine($"this is the points {p.Info()}");
+
+        }
 
 
+
+
+        public static void withExpressionDemo()
+        {
+            Point point = new Point(10, 5);
+            Point point1 = point with { x = 20 };
+
+            Console.WriteLine($"this is the points {point1.Info()}");
+        }
     }
 }

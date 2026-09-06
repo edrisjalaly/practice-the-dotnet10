@@ -281,4 +281,13 @@ SomeClass someObject = new()
 
 // someObject = new someStrature() { [Feild] = value, [Property] = value, };
 // 
-other.structsDemo();
+//other.structsDemo();
+
+
+
+// readonly struct : a struct that can only be initialized once and cannot be modified after that
+// other.readonlystructsDemo();
+// 
+other.withExpressionDemo();
+
+
