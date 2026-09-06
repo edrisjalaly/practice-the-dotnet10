@@ -65,5 +65,27 @@ namespace practice_the_dotnet10
 
             Console.WriteLine($"this is the points {point1.Info()}");
         }
+
+
+
+
+
+        struct conrnerPoint
+        {
+            public int x { get; set; }
+            public int y { get; set; }
+            public conrnerPoint()
+            {
+                x = 5;
+                y = 10;
+            }
+        }
+
+        public static void ExplicitParameterlessConstructorDemo()
+        {
+            conrnerPoint conrnerPoint = new conrnerPoint();
+
+            Console.WriteLine($"this is the points {conrnerPoint.x}, {conrnerPoint.y}");
+        }
     }
 }

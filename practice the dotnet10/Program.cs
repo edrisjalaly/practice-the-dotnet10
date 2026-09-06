@@ -288,6 +288,10 @@ SomeClass someObject = new()
 // readonly struct : a struct that can only be initialized once and cannot be modified after that
 // other.readonlystructsDemo();
 // 
-other.withExpressionDemo();
+//other.withExpressionDemo();
 
 
+
+//
+
+other.ExplicitParameterlessConstructorDemo();
