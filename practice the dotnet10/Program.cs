@@ -302,4 +302,13 @@ SomeClass someObject = new()
 //other.autoDefaultStructDemo();
 
 
-other.primaryConstructorDemo();
+//other.primaryConstructorDemo();
+
+
+
+// can use the data types as a struct and can be used as a struct
+//other.primativeAsStructDemo();
+
+
+
+// 

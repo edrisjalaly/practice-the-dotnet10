@@ -123,7 +123,14 @@ namespace practice_the_dotnet10
 
 
 
+        
+        public static void primativeAsStructDemo()
+        {
+            System.Int32 x = 10;
+            int y = 5;
 
 
+            Console.WriteLine($" this is the data types: this is int32 {x.GetType()}: this is int {y.GetType()} ");
+        }
     }
 }
