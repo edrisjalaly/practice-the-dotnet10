@@ -343,4 +343,16 @@ SomeClass someObject = new()
 // 3 : GetHashCode() : returns a hash code for the current object
 // 4 : GetType() : returns the type of the current object
 
-TypeAndBehavier.systemObject();
+//TypeAndBehavier.systemObject();
+
+
+// value Refernce Type : struct enums class interface delegate are all types in .net
+// structs and enums , derived from system.valueType class, which is derived from system.object class, have value semantics, stored on the stack or on the heap;
+
+// reference types : class, interface, delegate, derived from system.object, have reference type of semantics, stored on the heap mostly, jit can optimize;
+
+
+// value vs reference type :
+
+
+TypeAndBehavier.valueRefernceTypeDemo();

@@ -32,5 +32,39 @@ namespace practice_the_dotnet10
 
 
 
+
+        public static void valueRefernceType()
+        {
+
+        }
+
+
+
+        struct userStruct(int age)
+        {
+            public int Age { get; set; } = age;
+        }
+        class userClass(int age)
+        {
+            public int Age { get; set; } = age;
+        }
+        public static void valueRefernceTypeDemo()
+        {
+            userStruct userStruct1 = new userStruct(25);
+            userClass userClass1 = new userClass(30);
+
+            userStruct userStruct2 = userStruct1;
+            userStruct2.Age = 35;
+
+            userClass userClass2 = userClass1; 
+            userClass2.Age = 40;
+
+            Console.WriteLine($" this is struct {userStruct1.Age}");
+            Console.WriteLine($" this is class {userClass1.Age}");
+
+            Console.WriteLine($" this is struct 2 {userStruct2.Age}");
+            Console.WriteLine($" this is class 2 {userClass2.Age}");
+        }
+
     }
 }
