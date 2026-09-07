@@ -363,4 +363,10 @@ SomeClass someObject = new()
 // heap : stores reference types, not thread-safe as heap is shared per process, managed automatically by garbage collector, slow allocation and cleanup, larger size which auto-scales,
 
 
-TypeAndBehavier.stackVsHeapDemo();
+//TypeAndBehavier.stackVsHeapDemo();
+
+
+// ref vs out vs in modfiers
+
+
+TypeAndBehavier.refVsOutVsInDemo();

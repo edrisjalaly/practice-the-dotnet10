@@ -75,5 +75,43 @@ namespace practice_the_dotnet10
 
         }
 
+
+
+        public static void refVsOutVsInDemo()
+        {
+            int number1 = 10;            
+            ModifyValue( number1);
+            void ModifyValue( int num)
+            {
+                num += 5;
+            }
+            Console.WriteLine(number1);
+
+
+
+            var result = useingOut(out int number2);
+            bool useingOut(out int number)
+            {
+                number = 6;
+                return true;
+            }            
+            Console.WriteLine($"{ result} - {number2}");
+
+
+
+            int number4 = 30;
+            useIngIn(number4);
+            void useIngIn(in int abc)
+            {
+                Console.WriteLine(abc);
+            }
+
+
+        }
+
+
+
+
+
     }
 }
