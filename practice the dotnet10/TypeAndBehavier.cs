@@ -111,7 +111,18 @@ namespace practice_the_dotnet10
 
 
 
+        public static void boxingUnboxingDemo()
+        {
+            int number = 10;
+            object boxedNumber = number; // Boxing
+
+            Console.WriteLine($" boxed {boxedNumber}");
 
 
+            int unboxedNumber = (int)boxedNumber; // Unboxing
+            Console.WriteLine($" unboxed {unboxedNumber}");
+
+
+        }
     }
 }
