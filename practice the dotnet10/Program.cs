@@ -355,4 +355,12 @@ SomeClass someObject = new()
 // value vs reference type :
 
 
-TypeAndBehavier.valueRefernceTypeDemo();
+//TypeAndBehavier.valueRefernceTypeDemo();
+
+
+
+// stack : stores value types, therad-safe because each thread has its own stack, managed automatically in last in first out order, fast allocation and heap;
+// heap : stores reference types, not thread-safe as heap is shared per process, managed automatically by garbage collector, slow allocation and cleanup, larger size which auto-scales,
+
+
+TypeAndBehavier.stackVsHeapDemo();

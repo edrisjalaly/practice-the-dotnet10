@@ -66,5 +66,14 @@ namespace practice_the_dotnet10
             Console.WriteLine($" this is class 2 {userClass2.Age}");
         }
 
+
+
+
+
+        public static void stackVsHeapDemo()
+        {
+
+        }
+
     }
 }
