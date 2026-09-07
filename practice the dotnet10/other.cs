@@ -132,5 +132,43 @@ namespace practice_the_dotnet10
 
             Console.WriteLine($" this is the data types: this is int32 {x.GetType()}: this is int {y.GetType()} ");
         }
+
+
+
+
+
+        enum PaymentType
+        {
+            Cash,
+            CreditCard,
+            DebitCard,
+            PayPal
+        }
+        public static void enumsDemo()
+        { 
+            void processPayment(decimal amount, PaymentType type)
+            {
+                switch(type){
+                    case PaymentType.Cash:
+                        Console.WriteLine($"Cash: {amount}"); break;
+                    case PaymentType.CreditCard:
+                        Console.WriteLine($"credit card {amount}") ; break;
+                    case PaymentType.DebitCard:
+                        Console.WriteLine($"debit card {amount}"); break;
+                    case PaymentType.PayPal:
+                        Console.WriteLine($"paypal {amount}"); break;
+
+                    default: Console.WriteLine("none") ; break;
+                }
+            }
+
+            processPayment(100.0m, PaymentType.CreditCard);
+        }
+
+
+
+
+
+
     }
 }

@@ -311,4 +311,12 @@ SomeClass someObject = new()
 
 
 
+// enums : a value type that defines a set of named constants
+
+// enum is short for enumeration : just like  struct, enums are value types, enum is a set of named constants, with un underlying intgerling type, (int by default)
+// as a rule of thumb enums are ideal when representing a set of related valid options, 
+//  seasons : spring, summer, autumn, winter
+//  payment methods : cash, credit card, debit card, paypal
+//  access modifier enum EnumName { enum member = constant value }
 // 
+other.enumsDemo();
