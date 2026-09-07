@@ -368,7 +368,9 @@ SomeClass someObject = new()
 
 // ref vs out vs in modfiers
 
-
+// in  → "Give me something to read."
+// out → "I'll give you something back."
+// ref → "Give me something, and I may change it."
 //TypeAndBehavier.refVsOutVsInDemo();
 
 
