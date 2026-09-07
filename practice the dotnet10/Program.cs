@@ -319,4 +319,28 @@ SomeClass someObject = new()
 //  payment methods : cash, credit card, debit card, paypal
 //  access modifier enum EnumName { enum member = constant value }
 // 
-other.enumsDemo();
+//other.enumsDemo();
+
+
+// in .net almost everthing is a type organized into categories that determine their bahavier and memory management
+
+// commmon types system  : 
+// object base type -> value type  and reference type 
+// value type : struct type, enyum type,
+// reference type : class type, interface type, delegate type
+// value type : struct type -> built-in struct type, user-defined struct type : system.int32, system.double, system.char, system.bool, system.datetime, system.decimal, system.guid, system.timespan
+// enum types : built-in enum type, user-defined enum type : system.enum
+
+// reference type : class type -> built-in class type, user-defined class type : system.object, system.string, system.array, system.exception, system.type
+
+
+
+// all types are derived from system.object class
+// can use object instead of system.object
+// system.object has 3 main methods that all types inherit by default
+// 1 : ToString() : returns a string representation of the object
+// 2 : Equals(object obj) : determines whether the specified object is equal to the current object
+// 3 : GetHashCode() : returns a hash code for the current object
+// 4 : GetType() : returns the type of the current object
+
+TypeAndBehavier.systemObject();
