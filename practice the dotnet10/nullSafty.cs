@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace practice_the_dotnet10
@@ -91,10 +92,49 @@ namespace practice_the_dotnet10
 
 
 
-
+        class ReportOptions
+        {
+            public ExportOptions Export { get; set; }
+        }
+        class ExportOptions
+        {
+            public ExportFormat format { get; set; } = ExportFormat.excel;
+        }
+        public enum ExportFormat
+        {
+            excel,
+            word
+        }
         public static void nullCoalesing()
         {
+            ReportOptions  reportOptions = new ReportOptions();
+            ExportOptions? exportOptions = new ExportOptions();
+            ExportOptions  FallbackexportOptions = new ExportOptions() {  format = ExportFormat.word };
 
+
+            // old way 
+            if (exportOptions is not null)
+            {
+                reportOptions.Export = exportOptions;
+            }
+            else
+            {
+                reportOptions.Export = FallbackexportOptions;
+            }
+
+
+            //old way 2
+            reportOptions.Export = exportOptions is not null ? exportOptions : FallbackexportOptions;
+
+
+            //new way
+            reportOptions.Export = exportOptions ?? FallbackexportOptions;
         }
+
+
+
+
+
+
     }
 }

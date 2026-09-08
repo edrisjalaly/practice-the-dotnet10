@@ -396,6 +396,9 @@ nullSafty.nullReferenceType();
 
 
 
+// null coalesing operator : operad 1 : represent the origian value ?? operand 2 represent the fallback result in case operand 1 is null
+nullSafty.nullCoalesing();
+
 
 
 
