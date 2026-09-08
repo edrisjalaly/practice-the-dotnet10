@@ -378,4 +378,24 @@ SomeClass someObject = new()
 // boxing vs unboxing : boxing is the process of converting a value type to a reference type, unboxing is the process of converting a reference type to a value type
 
 
-TypeAndBehavier.boxingUnboxingDemo();
+//TypeAndBehavier.boxingUnboxingDemo();
+
+
+
+
+// null safty : effective way to handle null values and prevent rumtime crashes
+// 
+
+//nullSafty.nullDeclaration();
+
+
+
+// null refernce type : arent refernce type Implicit nullable? why explicit set them nullable;
+// express intent, help compilor enforce that intent
+nullSafty.nullReferenceType();
+
+
+
+
+
+
