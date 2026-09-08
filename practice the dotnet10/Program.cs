@@ -404,3 +404,6 @@ nullSafty.nullCoalesing();
 
 // set the variable to a fallback result when the variable is null
 nullSafty.nullCoaslesingAssignmentDemo();
+
+
+nullSafty.nullConditionalOperator();

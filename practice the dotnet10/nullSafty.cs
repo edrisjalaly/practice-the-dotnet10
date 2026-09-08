@@ -149,5 +149,19 @@ namespace practice_the_dotnet10
             // new way
             options.Export ??= fallback;
         }
+
+
+
+
+
+        public static void nullConditionalOperator()
+        {
+            ReportOptions options = new() { Export= new() };
+
+            if (options.Export?.format == ExportFormat.word)
+            {
+                Console.WriteLine(options.Export.format);
+            }
+        }
     }
 }
