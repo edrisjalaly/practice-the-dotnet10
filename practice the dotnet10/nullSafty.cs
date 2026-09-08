@@ -135,6 +135,19 @@ namespace practice_the_dotnet10
 
 
 
+        public static void nullCoaslesingAssignmentDemo()
+        {
+            ReportOptions options = new() { Export = new() };
+            ExportOptions fallback = new() { format = ExportFormat.excel };
 
+            //old way
+            if(options is null)
+            {
+                options.Export = fallback;
+            }
+
+            // new way
+            options.Export ??= fallback;
+        }
     }
 }
