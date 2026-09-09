@@ -146,5 +146,17 @@ namespace practice_the_dotnet10
 
 
 
+
+        public static void jaggedArrayDemo()
+        {
+            int[][] jaggedArray = [[2, 2], [ 3, 4 , 5, 6]];
+            foreach (int[] row in jaggedArray)
+            {
+                foreach(int element in row)
+                {
+                    Console.WriteLine($"this is element {element} ");
+                }
+            }
+        }
     }
 }
