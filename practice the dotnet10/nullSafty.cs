@@ -82,7 +82,7 @@ namespace practice_the_dotnet10
             {
 
 
-                Console.WriteLine($"this is the person Address {person.Address.City}");
+                //Console.WriteLine($"this is the person Address {person.Address.City}");
             }
 
             personCity(person);
@@ -162,6 +162,32 @@ namespace practice_the_dotnet10
             {
                 Console.WriteLine(options.Export.format);
             }
+        }
+
+
+
+
+
+        public static void nullConditionalAssignmentOperator()
+        {
+            ReportOptions options = new();
+
+            ExportOptions GetDefaultOption()
+            {
+                Console.WriteLine("loading export");
+                return new();
+            }
+
+            // old way
+            if (options is not null)
+            {
+                options.Export = GetDefaultOption();
+            }
+
+            //new way 
+            options?.Export = GetDefaultOption();
+
+
         }
     }
 }
