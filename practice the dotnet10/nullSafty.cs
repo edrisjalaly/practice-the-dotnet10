@@ -189,5 +189,14 @@ namespace practice_the_dotnet10
 
 
         }
+
+
+
+
+        public static void nullForgivingOperator()
+        {
+
+        }
+            
     }
 }

@@ -392,21 +392,30 @@ SomeClass someObject = new()
 
 // null refernce type : arent refernce type Implicit nullable? why explicit set them nullable;
 // express intent, help compilor enforce that intent
-nullSafty.nullReferenceType();
+//nullSafty.nullReferenceType();
 
 
 
 // null coalesing operator : operad 1 : represent the origian value ?? operand 2 represent the fallback result in case operand 1 is null
-nullSafty.nullCoalesing();
+//nullSafty.nullCoalesing();
 
 
 
 
 // set the variable to a fallback result when the variable is null
-nullSafty.nullCoaslesingAssignmentDemo();
+//nullSafty.nullCoaslesingAssignmentDemo();
 
 
-nullSafty.nullConditionalOperator();
+//nullSafty.nullConditionalOperator();
 
 
-nullSafty.nullConditionalAssignmentOperator();
+//nullSafty.nullConditionalAssignmentOperator();
+
+
+
+// null forgiving operator : allows you to explicity suppress nullability warnings in an enabled nullable context;
+// format : Expression!;
+// 
+
+
+
