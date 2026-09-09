@@ -119,5 +119,32 @@ namespace practice_the_dotnet10
             }
         }
 
+
+
+
+
+        public static void multiDimentionalArray()
+        {
+            int[,] matrix = new int[2, 2] { { 3, 4 }, { 5, 6 } };
+
+            int first = matrix[0, 0];
+            int second = matrix[0, 1];          
+            int third = matrix[1, 0];
+            int fourth = matrix[1, 1];
+
+            Console.WriteLine(first);
+            Console.WriteLine(second);
+            Console.WriteLine(third);
+            Console.WriteLine(fourth);
+
+
+            int[] firstArray = [first, second];
+
+            Console.WriteLine(string.Join(",", firstArray));
+
+        }
+
+
+
     }
 }
