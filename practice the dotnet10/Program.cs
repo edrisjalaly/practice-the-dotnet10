@@ -419,3 +419,35 @@ SomeClass someObject = new()
 
 
 
+// big notation : it the wort case for and alogorithm
+// 1 : o(1) - constant
+// 2 : O(log (n)) - logarithmic
+// 3 : o(n) - linear
+// 4 : o(n* log*(n)) - log-linear
+
+// o(n2) - quadric
+// o(n3) - cubic
+// o(2n) - exponential
+// o(n!) - factorial
+
+//csFundamentals.bigO();
+
+
+
+
+// Array structure :  Continusly stored data in memory  of the same type for quick access and lookup
+// contiguous memenry allocation , strongly-type, zero-base indexing; fixed-size connot change after creation, elements in newly created array are atuo initialized
+// can ba multi-dimentional or jagged, derived from system.array class, refernce type stored in the heap;
+
+// stracture : Type[] [Array Name] = new Type[Size];
+// Type [] [Array Name] = [Value1, value2, ...];
+// exp : int[] array = [1,2,3,4,5];
+//       int[] array = new int[] {1,2,3,4}
+//       int array = { 1,2,3,4}
+
+// note : if you want to initialize a empty array with  with inizial size -> you can not us collection expression you need to youe the standard format
+// zero base indexing : all elment are store in a zero+1 index first element is 0  and last it n-1
+// to retrive a value from an array it is O(1) Time : O(1) space;
+csFundamentals.arrayDemo();
+
+
