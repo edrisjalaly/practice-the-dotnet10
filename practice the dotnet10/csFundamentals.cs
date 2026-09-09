@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
 using System.Text;
 
 namespace practice_the_dotnet10
@@ -149,6 +150,7 @@ namespace practice_the_dotnet10
 
         public static void jaggedArrayDemo()
         {
+            // o(n*m) Time : o(1) spcae;
             int[][] jaggedArray = [[2, 2], [ 3, 4 , 5, 6]];
             foreach (int[] row in jaggedArray)
             {
@@ -157,6 +159,29 @@ namespace practice_the_dotnet10
                     Console.WriteLine($"this is element {element} ");
                 }
             }
+        }
+
+
+
+
+        public static void ArrayOperaion()
+        {
+            
+            int[] numbers = [ 9, 2, 3, 4, 5, 6 ];
+            
+            Array.IndexOf( numbers, 5);
+
+            Array.LastIndexOf(numbers,1);
+
+            // time and space both .net runtime 
+            Array.Sort(numbers);
+
+            // o(n) time, o(1) space
+            Array.Reverse(numbers);
+
+            // o(n) time, o(1) space
+            Array.Fill(numbers, 5);
+            
         }
     }
 }
