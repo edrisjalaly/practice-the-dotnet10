@@ -98,5 +98,26 @@ namespace practice_the_dotnet10
             Console.WriteLine($"this is the result {string.Join(",", result)}");
         }
 
+
+
+
+        public static void spreadElement()
+        {
+            decimal[] decimals = [123.45m, 45.20m];
+            decimal[] decimals2 = {3, 4, 5, 6, 7, 8, 9 };
+
+
+
+            //time and space O(n + m + K + 1)
+            decimal[] combine(decimal[] decimals, decimal[] decimal2) => [..decimals, ..decimal2];
+            decimal[] all = combine(decimals, decimals2);
+
+
+            foreach (decimal number in all)
+            {
+                Console.WriteLine(number);
+            }
+        }
+
     }
 }

@@ -454,4 +454,11 @@ SomeClass someObject = new()
 // 
 //csFundamentals.arrayIteraion();
 
-csFundamentals.twoSum();
+//csFundamentals.twoSum();
+
+
+// spread element let you add all items from any collection into a spacified collection without writing custom loops
+// spread is : o(n) Time and o(n) space
+csFundamentals.spreadElement();
+
+ 
