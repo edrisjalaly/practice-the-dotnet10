@@ -448,6 +448,8 @@ SomeClass someObject = new()
 // note : if you want to initialize a empty array with  with inizial size -> you can not us collection expression you need to youe the standard format
 // zero base indexing : all elment are store in a zero+1 index first element is 0  and last it n-1
 // to retrive a value from an array it is O(1) Time : O(1) space;
-csFundamentals.arrayDemo();
+//csFundamentals.arrayDemo();
 
-
+// iteration : takes o(n) time, o(1) space;
+// 
+csFundamentals.arrayIteraion();
