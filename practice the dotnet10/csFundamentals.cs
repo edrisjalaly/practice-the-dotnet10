@@ -59,5 +59,48 @@ namespace practice_the_dotnet10
                 x++;
             }
         }
+
+
+
+
+        public static void twoSum()
+        {
+            int[] twoSum(int[] numbers, int target)
+            {
+                int start = 0;
+                int end = numbers.Length - 1;
+
+                while( start < end)
+                {
+                    var match = numbers[start] + numbers[end];
+
+                    if( match == target)
+                    {
+                        return [numbers[start], numbers[end]]; 
+                    }
+                    else if(match < target)
+                    {
+                        start++;
+                    }
+                    else
+                    {
+                        end--;
+                    }
+                }
+
+                return [];
+            }
+
+            int[] numbers = [1,2,3,4,4,5,6];
+
+            int[] result = twoSum(numbers, 8);
+
+            Console.WriteLine($"this is the first {result[0]}");
+            Console.WriteLine($"this is the second {result[1]}");
+        }
+
+
+
+
     }
 }
