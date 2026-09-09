@@ -95,12 +95,8 @@ namespace practice_the_dotnet10
 
             int[] result = twoSum(numbers, 8);
 
-            Console.WriteLine($"this is the first {result[0]}");
-            Console.WriteLine($"this is the second {result[1]}");
+            Console.WriteLine($"this is the result {string.Join(",", result)}");
         }
-
-
-
 
     }
 }
