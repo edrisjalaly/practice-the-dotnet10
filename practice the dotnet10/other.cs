@@ -169,6 +169,5 @@ namespace practice_the_dotnet10
 
 
 
-
     }
 }

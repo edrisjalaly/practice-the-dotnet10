@@ -471,3 +471,43 @@ SomeClass someObject = new()
 
 // 
 csFundamentals.ArrayOperaion();
+
+
+// represent text data type and provide tools for handling it in code.
+// string structure : coontiguosly stored characters in memory immutable text.
+
+//unicode
+// internaltonal encoding standard, it defines over 1.1 million code point, universal consistency
+
+//code point
+// code points are assigned to letters, numbers, symbols and more, code point format in U+xxx, XXXX is written in hexadecimal format
+
+
+//code unit 
+//storage used to hold code point , UTF-16, each code unit is 16-bits (2bytes)
+
+
+// UTF-16
+// standd for 16-bit unicode tranasformation format, character encoding system based on unicode standard
+// uses 16bit code units ot represent code points, common characters require  one 16-bit code unit. complex character require two
+
+
+// character stracture overview : unicode code point for (A U+0041) symbol number letter emoji; in c# it is system.Char
+// character literal -> 'A', unicode escape sequnce -> '\u0041'
+// hexa decimal escape sequence
+// uft-16 encoding is used to convert the code-point to code-unit : 1 code unit (basic multilingual plane) : 2 code units (supplementary plane)
+// utf-16 code unit for (A => 00000000 01000001) 16 bit or 2 byte 
+
+
+// string literal (quoted string literal);
+// "hello" : 'h' : 'e' : 'l' : 'l' : 'o':  system.string (string) class
+//            0th   1th   2th   3th   4th 
+//  char and string  are differnt types : 'A' != "A";
+// string are immutable, 
+// format : string text = "some" + "text" => "someText" + "andSomeMore";
+// string : O(n2) time and : O(n) space
+// zero-based indexing :   string text = "someText";
+//                                        01234567
+// char first = text text[0];
+// for find char base of index : o(1) time : o(1) space;
+StringDemo.stringStructure();
