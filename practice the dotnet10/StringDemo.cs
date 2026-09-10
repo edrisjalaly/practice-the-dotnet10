@@ -100,5 +100,41 @@ namespace practice_the_dotnet10
 
             Console.WriteLine(filedetail);
         }
+
+
+
+
+        public static void stringBuilder()
+        {
+            string[] report = ["many", "parts", "of", "a", "report"];
+
+            StringBuilder sb = new();
+
+            //StringBuilder sb2 = new(500);
+            //StringBuilder sb3 = new("some inital value", 500);
+
+            foreach (string part in report)
+            {
+                sb.AppendLine(part);
+            }
+
+            Console.WriteLine(sb);
+        }
+
+
+
+
+        public static void StringOp()
+        {
+            string text = "this is the text";
+            string sub = "is";
+
+            string unterimmedText = "this is";
+
+
+            Console.WriteLine(text.IndexOf("x"));
+
+
+        }
     }
 }

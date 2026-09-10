@@ -535,4 +535,39 @@ csFundamentals.ArrayOperaion();
 
 
 // raw string literals 
-StringDemo.stringRaw();
+//StringDemo.stringRaw();
+
+
+// build large and dynamic strings efficiently
+// format : StringBuilder sb = new();
+// methods " sb.length(), sb.Capacity, sb.AppendLine(text), sb.Append(text), sb.ToString(),  
+//StringDemo.stringBuilder();
+
+
+
+// string Operations
+// methods are available on the string class to helo you work with text
+// time .net runtime dependent : O(1) space
+// "someText.IndexOf(sub);
+// "someText.Contains(sub);
+// "someText.StartsWith(value);
+// "someText.EndsWith(value);
+// "someText.Replace(oldvalue, newValue);
+// "someText.Tolower();
+// "someText.ToUpper();
+// "someText.IsNullOrEmpty(text);
+// "someText.IsNullOrWhiteSpace(text);
+// "someText.TrimStart();
+// "someText.TrimEnd();
+// "someText.Splite();
+// "someText.join(seprator, StringCollection);
+// "someText.ToCharArray();
+// "someText.ToCharArray();
+
+
+StringDemo.StringOp();
+
+
+
+
+// 
