@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace practice_the_dotnet10
@@ -53,9 +54,21 @@ namespace practice_the_dotnet10
                     maxVowelPhrases = currentPhrases;
                 }
 
+                // string interpolation
                 return ($" this is the count {vowelcount}");
             }
 
+            return maxVowelPhrases;
+        }
+
+
+
+        public static void escapeSequences()
+        {
+            Console.WriteLine("this is text c:\\ doc\\ file");
+            Console.WriteLine("this is text \"hello\"");
+            Console.WriteLine("this is text \n this");
+            Console.WriteLine(" \u2713 this is text ");
         }
     }
 }

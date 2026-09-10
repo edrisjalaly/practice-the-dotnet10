@@ -510,4 +510,18 @@ csFundamentals.ArrayOperaion();
 //                                        01234567
 // char first = text text[0];
 // for find char base of index : o(1) time : o(1) space;
-StringDemo.stringStructure();
+//StringDemo.stringStructure();
+
+
+
+
+//-------------------------------------------------------
+// combinaation of string with \
+//   spacial character    escape    action\meaning
+//      n                  \n       new line
+//      r                  \r       Carriage return
+//      \                  \\       backslashs
+//      "                  \"       Double quote
+//      u                  \uXXX    unicode escape code
+//-------------------------------------------------------
+StringDemo.escapeSequences();
