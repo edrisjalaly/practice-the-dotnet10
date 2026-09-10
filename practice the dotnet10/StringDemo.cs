@@ -70,5 +70,35 @@ namespace practice_the_dotnet10
             Console.WriteLine("this is text \n this");
             Console.WriteLine(" \u2713 this is text ");
         }
+
+
+
+        public static void verbatim()
+        {
+            string file = string.Empty;
+            string size = "4KB";
+
+
+            string fileDetaild = @"file location is "" c:\document""  files size is 4kb ";
+            Console.WriteLine(fileDetaild);
+
+        }
+
+
+
+
+        public static void stringRaw()
+        {
+            string filedetail = string.Empty;
+            string fileSize = "4 kb";
+
+            filedetail = """ 
+                   File location is : C:\document\file.txt
+                   File size is 4kb
+                   """;
+
+
+            Console.WriteLine(filedetail);
+        }
     }
 }
